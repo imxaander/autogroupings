@@ -46,10 +46,10 @@ function groupings(s, grN, grS){
         
     }
 
-    console.log(groupDOM)
+    
 
     groupC.innerHTML = groupDOM;
-    console.log(Object.keys(groups).length)
+    
     }
 
 var gS;
@@ -63,13 +63,13 @@ var names = [];
         document.getElementById('groupnames').value = "";
         names.push(n2a);
         namesC.innerHTML += n2a + "<br>";
-        console.log(names);
+        
         }
     }
     function refreshValues(){
         gS = document.getElementById('gS').value;
         gN = document.getElementById('gN').value;
-        console.log(gS, gN)
+        
 
     }
 
