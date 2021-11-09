@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>auto groupings</title>
+        <script src="main.js"></script>
+        <style>
+            table {
+	display: table;
+}
+table tr {
+	display: table-cell;
+}
+table tr td {
+	display: block;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Auto Groupings By imxaander</h1>
+        
+        rules : groupcount and group size should be the factors of the number of names. <br>
+
+        <input id="groupnames" type="text"/> <button id="addBtn" onclick="addToArray()">Add to Names</button><br>
+        Groupcount = how many groups <br>
+        <input id="gN" type="number" onchange="refreshValues()"/><br>
+        Groupsize = how many members in the group   <br>
+        <input id="gS" type="number" onchange="refreshValues()"/>
+        
+        <div id="namess">
+            <h3>Names to group:</h3>
+        </div>
+        <button onclick="groupings(names, gN, gS)">Group this!</button>
+        <h3>Grouped</h3>
+        <table id="grouped" border="1">
+            
+        </table>
+    </body>
+
+</html>
